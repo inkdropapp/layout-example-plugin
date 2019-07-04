@@ -1,0 +1,18 @@
+{
+  "menu": [
+    {
+      "label": "Plugins",
+      "submenu": [
+        {
+          "label": "layout-example",
+          "submenu": [
+            {
+              "label": "Toggle dialog",
+              "command": "layout-example:toggle-dialog"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
