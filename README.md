@@ -9,3 +9,7 @@ Inkdrop Extending Layout Example Plugin
 ipm install inkdropapp/layout-example-plugin
 ```
 
+## How to use
+
+Toggle each component from menu: *Plugins* -> *layout-example* -> ...
+
