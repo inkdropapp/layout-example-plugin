@@ -23,6 +23,10 @@
               "command": "layout-example:toggle-editor-header-item"
             },
             {
+              "label": "Toggle Editor Status Bar Item",
+              "command": "layout-example:toggle-editor-status-bar-item"
+            },
+            {
               "label": "Toggle Editor Left Pane",
               "command": "layout-example:toggle-editor-left-pane"
             },
