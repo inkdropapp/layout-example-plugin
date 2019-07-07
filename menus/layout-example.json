@@ -9,6 +9,30 @@
             {
               "label": "Toggle dialog",
               "command": "layout-example:toggle-dialog"
+            },
+            {
+              "label": "Toggle Left Most Bar",
+              "command": "layout-example:toggle-left-most-bar"
+            },
+            {
+              "label": "Toggle Custom Sidebar Menu Item",
+              "command": "layout-example:toggle-sidebar-menu-item"
+            },
+            {
+              "label": "Toggle Editor Header Item",
+              "command": "layout-example:toggle-editor-header-item"
+            },
+            {
+              "label": "Toggle Editor Left Pane",
+              "command": "layout-example:toggle-editor-left-pane"
+            },
+            {
+              "label": "Toggle Editor Right Pane",
+              "command": "layout-example:toggle-editor-right-pane"
+            },
+            {
+              "label": "Toggle Editor Toolbar Button",
+              "command": "layout-example:toggle-editor-toolbar-button"
             }
           ]
         }
