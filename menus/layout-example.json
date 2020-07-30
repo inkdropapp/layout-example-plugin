@@ -19,10 +19,6 @@
               "command": "layout-example:toggle-sidebar-menu-item"
             },
             {
-              "label": "Toggle Editor Header Item",
-              "command": "layout-example:toggle-editor-header-item"
-            },
-            {
               "label": "Toggle Editor Status Bar Item",
               "command": "layout-example:toggle-editor-status-bar-item"
             },
