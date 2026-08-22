@@ -6,10 +6,20 @@ Read the [documentation](https://docs.inkdrop.app/manual/extending-the-ui) for m
 
 ## Install
 
-```shell
+```sh
 ipm install inkdropapp/layout-example-plugin
 ```
 
 ## How to use
 
 Toggle each component from menu: _Plugins_ -> _layout-example_ -> ...
+
+## Development
+
+```sh
+pnpm install
+pnpm dev        # rebuild lib/ on change
+pnpm typecheck
+pnpm lint
+pnpm format
+```

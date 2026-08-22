@@ -1,27 +1,29 @@
 {
   "name": "layout-example",
-  "main": "./lib/layout-example",
   "version": "1.0.0",
   "description": "A plugin demonstrating how to extend the UI",
   "keywords": [],
-  "repository": "https://github.com/inkdropapp/layout-example",
   "license": "MIT",
-  "engines": {
-    "inkdrop": "^4.x"
+  "repository": "https://github.com/inkdropapp/layout-example-plugin",
+  "main": "./lib/index.js",
+  "scripts": {
+    "dev": "tsdown --watch",
+    "build": "tsdown",
+    "format": "oxfmt",
+    "lint": "oxlint",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
   },
-  "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.10.5",
-    "@babel/plugin-proposal-class-properties": "^7.10.4",
-    "@babel/preset-env": "^7.10.4",
-    "@babel/preset-react": "^7.10.4",
-    "babel-eslint": "^10.1.0",
-    "core-js": "^3.6.5",
-    "eslint": "^7.5.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.5",
-    "prettier": "^2.0.5"
+    "@inkdropapp/types": "^0.0.11",
+    "@types/react": "^19.2.18",
+    "inkdrop-model": "^2.13.1",
+    "oxfmt": "^0.64.0",
+    "oxlint": "^1.79.0",
+    "tsdown": "^0.22.14",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "inkdrop": "^6.0.0"
   }
 }
