@@ -1,5 +1,6 @@
 import type { Environment, IInkdropPlugin } from '@inkdropapp/types'
 
+import { editorHeaderButton } from './editor-header-button'
 import { editorLeftPane } from './editor-left-pane'
 import { editorRightPane } from './editor-right-pane'
 import { editorStatusBarItem } from './editor-status-bar-item'
@@ -16,6 +17,7 @@ const MODAL_LAYOUT = 'modal'
 const layoutExamples: LayoutExample[] = [
   leftMostBar,
   sidebarMenuItem,
+  editorHeaderButton,
   editorStatusBarItem,
   editorLeftPane,
   editorRightPane,
@@ -25,6 +27,7 @@ const layoutExamples: LayoutExample[] = [
 type LayoutExampleCommands = {
   'layout-example:toggle-left-most-bar': undefined
   'layout-example:toggle-sidebar-menu-item': undefined
+  'layout-example:toggle-editor-header-button': undefined
   'layout-example:toggle-editor-status-bar-item': undefined
   'layout-example:toggle-editor-left-pane': undefined
   'layout-example:toggle-editor-right-pane': undefined
@@ -49,6 +52,7 @@ class LayoutExamplePlugin implements IInkdropPlugin {
     this.subscription = commands.add<LayoutExampleCommands>(document.body, {
       'layout-example:toggle-left-most-bar': leftMostBar.toggle,
       'layout-example:toggle-sidebar-menu-item': sidebarMenuItem.toggle,
+      'layout-example:toggle-editor-header-button': editorHeaderButton.toggle,
       'layout-example:toggle-editor-status-bar-item': editorStatusBarItem.toggle,
       'layout-example:toggle-editor-left-pane': editorLeftPane.toggle,
       'layout-example:toggle-editor-right-pane': editorRightPane.toggle,

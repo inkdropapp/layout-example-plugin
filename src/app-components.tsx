@@ -1,4 +1,4 @@
-import type { ButtonProps } from '@inkdropapp/types'
+import type { ButtonProps, CommandButtonProps } from '@inkdropapp/types'
 import type React from 'react'
 import { createElement } from 'react'
 
@@ -38,6 +38,12 @@ export const StreamlineIcon = fromRegistry<StreamlineIconProps>('StreamlineIcon'
 
 /** The app's standard button, which renders a Streamline `icon` and a hover `tooltip`. */
 export const Button = fromRegistry<ButtonProps>('Button')
+
+/**
+ * The app's header-bar icon button. It is a `CommandButton`: give it a `command` and
+ * it dispatches it on click and shows the command's keybinding in its tooltip.
+ */
+export const AppHeaderButton = fromRegistry<CommandButtonProps>('AppHeaderButton')
 
 /** The app's sidebar row, so a custom item matches the built-in ones. */
 export const SideBarMenuItem = fromRegistry<SideBarMenuItemProps>('SideBarMenuItem')

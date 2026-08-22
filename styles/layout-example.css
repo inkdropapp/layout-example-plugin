@@ -35,3 +35,7 @@
 .layout-example.note-list-item-view.active {
   background: blue;
 }
+
+.layout-example.editor-header-button {
+  color: red;
+}
