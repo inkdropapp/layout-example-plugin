@@ -14,13 +14,14 @@ interface NoteListItemViewProps {
 
 export function LayoutExampleNoteListItemView(props: NoteListItemViewProps) {
   const { active, focused, note, onClick, onDblClick, onContextMenu } = props
-  const { title } = note
+  const { title, status } = note
 
   const className = [
     'layout-example',
     'note-list-item-view',
     active && 'active',
-    focused && 'focused'
+    focused && 'focused',
+    status !== 'none' && 'task'
   ]
     .filter(Boolean)
     .join(' ')
@@ -40,7 +41,6 @@ export function LayoutExampleNoteListItemView(props: NoteListItemViewProps) {
   function handleContextMenu(e: React.MouseEvent) {
     onContextMenu?.(e, note)
     e.preventDefault()
-    e.stopPropagation()
   }
 
   return (
