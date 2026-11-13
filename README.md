@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This repository has moved to [inkdropapp/plugins](https://github.com/inkdropapp/plugins): [`packages/layout-example`](https://github.com/inkdropapp/plugins/tree/main/packages/layout-example). It is archived and read-only; please open issues and pull requests there.
+
 # Inkdrop Extending Layout Example Plugin
 
 A reference plugin for Inkdrop showing every way to put your own React components
